@@ -1,89 +1,70 @@
-# Solid - Free Next.js Web Template for SaaS
+# Atoms Group Readme
 
-Solid is a free Next.js template specifically crafted for startups, SaaS, and software websites. It provides an extensive array of necessary sections, elements, and pages required to build a fully-equipped website for any SaaS, software, or startup site. Comes with all cutting edge React and Next.js features - **Built with Next.js 13, React 18 and TypeScript.**
+## Overview
 
-This Next.js template's homepage comes with an awesome hero area, logos of associated brands, a features section, an about section, another features section with tabs, counters, and star ratings, integration options, clear call-to-actions, an FAQ section with accordions, a testimonials section, pricing tables, a contact page, a blog, and a distinctive footer.
+Welcome to Atoms Group, a dynamic and growing software company dedicated to pushing the boundaries of innovation. With a vision to transform ideas into impactful solutions, Atoms Group has diversified its expertise across various domains, including software development, digital services, web development, app development, and hospitality.
 
-**Solid Next.js template packed with all necessary external pages** - such as login, registration, blog grids, and single blog pages, among others. This broad collection of pages provides all the necessary tools to create a feature-packed, comprehensive, and visually appealing website or landing page for software, a web application, or SaaS.
+## Vision
 
-### [🔥 Get Solid Pro - Next.js SaaS Boilerplate and Starter Kit](https://nextjstemplates.com/templates/solid)
+Our vision at Atoms Group is to be a leading force in the digital landscape, driving positive change through cutting-edge technology solutions. We strive to empower businesses and individuals by delivering innovative, scalable, and reliable software products.
 
-![Startup Pro](https://uideck.com/wp-content/uploads/edd/2023/07/solid-saas.png)
+## Services
 
-### [🚀 Solid PRO Live Demo](https://solid.nextjstemplates.com/)
+### 1. Software Development
+   - Tailored solutions to meet unique business needs.
+   - Custom software applications for enhanced efficiency.
 
-### [🚀 Solid FREE Live Demo](https://solid-free.nextjstemplates.com/)
+### 2. Digital Services
+   - Digital transformation strategies.
+   - Online presence optimization and digital marketing.
 
-### TailAdmin React PRO vs TailAdmin React FREE Comparison 📊
+### 3. Web Development
+   - Responsive and engaging web applications.
+   - User-centric and visually appealing websites.
 
-#### [Solid PRO](https://solid.nextjstemplates.com/)
-- SaaS Boilerplate + Starter Kit with Essential Integrations and Functionalities
-- Essential Integrations: Auth, DB, Stripe, MDX and More ...
-- Fully Functional, Ready to Use Sanity Blog Support
-- Premium Email Support
-- Functional External Pages
-- Free Lifetime Future Updates
-___
-#### [Solid FREE](https://solid-free.nextjstemplates.com/)
-- Only UI - Coded for Next.js
-- No Integrations
-- No Functional Blogging System
-- External Pages without Functions/Integrations
-- Community Support
-- Free Lifetime Future Updates
-___
+### 4. App Development
+   - Cross-platform mobile applications.
+   - Native app development for seamless user experiences.
 
-### [📦 Download](https://nextjstemplates.com/templates/solid)
+### 5. Hospitality
+   - Innovative technology solutions for the hospitality industry.
+   - Streamlining operations and enhancing customer experiences.
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/solid)
+## Meet the Developer
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+This website is proudly developed by Venkata Vijaya Bhaskar Vadada, a dedicated member of Atoms Group. With a passion for crafting elegant and efficient solutions, Vijay brings a wealth of experience to our team.
 
-### ⚡ Deploy Now
+## Website Details
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fsolid-nextjs)
+- **Framework:** Next.js
+- **Developer:** Venkata Vijaya Bhaskar Vadada
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/solid-nextjs)
+## Installation Guide
 
+Follow these steps to set up the Atoms Group website locally:
 
-## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/atoms-group/website.git
+   ```
 
-Here are the steps you need to follow to install the dependencies.
+2. Navigate to the project directory:
+   ```bash
+   cd website
+   ```
 
-1.Download and extract the template from **Next.js Templates.**
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2.**cd** into the template directory then run this command to install all the dependencies
-    
-```bash
-    npm install
-```
-    
-or
-    
-```bash
-    yarn install
- ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start the project on the local server
-    
-```bash
-    npm run dev
- ```
+Feel free to explore the website and reach out to us for any inquiries or collaboration opportunities.
 
-It’ll start the template on [localhost:3000](http://localhost:3000). 
-
-The documentation includes all the guides you need for the integrations. 
-
-
-### Deploying on PaaS
-
-If you are using a GitHub repo then you can go with free-of-cost and easy-to-use options like [Vercel](https://vercel.com/), or [Netlify](https://netlify.com/) they offer decent-free tiers for Next.js hosting.
-
-### 📄 License
-Solid Free is 100% free and open-source, feel free to use with your personal and commercial projects.
-
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Browse and Download - Best Free [Next.js Templates](https://nextjstemplates.com/templates)
+Thank you for visiting Atoms Group!
