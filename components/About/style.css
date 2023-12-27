@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+html, body {width: auto!important; overflow-x: hidden!important} 
+
+.imgg { 
+    width: 100px; 
+    height: 100px; 
+   
+    margin-left: auto; 
+    margin-right: auto; 
+    animation: GFG 5s infinite linear; 
+} 
+
+@keyframes GFG { 
+    0% { 
+        transform: rotate(0deg) 
+            translateX(100px) rotate(360deg); 
+    } 
+
+    100% { 
+        transform: rotate(-360deg) 
+            translateX(100px) rotate(360deg); 
+    } 
+} 
+
+.background-circle {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient( 125deg, #879dff, #ffffff);
+
+    border-radius: 50%;
+    z-index: 0;
+    margin-top: -2px; /* Adjust the distance from the top */
+    margin-right: 10px; /* Adjust the distance from the right */
+    display: inline-block; /* Ensures that the circle doesn't disrupt the flow of the text */
+    padding-left: -8px;  
+}
+
+  .text-content {
+    display: inline-block; /* Ensures that the text and circle are in the same line */
+    margin-left: 10px; /* Adjust the distance to move the text to the right */
+    margin-top: 4px;
+}
+.text2xl {
+    font-size: 1.6rem/* 24px */;
+    line-height: 2rem/* 32px */;
+}
+.containers {
+    display: flex;
+    justify-content: flex-end;
+  }
+.card{
+    width:23rem;
+   
+}
+@media (max-width: 420px) {
+    .flexshape {
+      flex-direction: column;
+    }
+
+    .flex-grow-shape {
+      width: 100%;
+    }
+
+    /* Adjust the width specifically for the "Contact us" button */
+    .flexshape button:first-child {
+      width: 100%; /* Adjust the width as needed */
+    }
+  }
+  @media (max-width: 420px) {
+    .flexshape {
+      flex-direction: column;
+    }
+
+
+    .flexshape button:first-child {
+      width: 100%; 
+      margin-bottom: -10px; /* Apply margin-top only for screens smaller than 420px */
+    }
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  @media (max-width: 700px) {
+    .logos:before,
+    .logos:after {
+      background: none;
+    }
+  }
+  
+  .logos-slide {
+    display: flex;
+    animation: slide 20s linear infinite; 
+    white-space: nowrap;
+  }
+  
+  .logos-slide img {
+    width: 8% ;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logos-slide img:hover {
+    transform: scale(1.1) translateY(-10px);
+  }
+
+  .logos-slide img:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .logos-slide::before,
+  .logos-slide::after {
+    content: "";
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  
+  
+  .gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0));
+    pointer-events: none;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  
+  }
+  
+  .relative:hover .gradient-overlay {
+    opacity: 4;
+    background: linear-gradient(to top, rgba(0, 255, 255, 0.3), rgba(255, 0, 255, 0));
+  }
+  
+  .image-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .relative:hover .image-info {
+    opacity: 1;
+  }

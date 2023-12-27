@@ -1,0 +1,139 @@
+
+html, body {width: auto!important; overflow-x: hidden!important} 
+
+.profile-card {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    width: 220px;
+    height: 200px;
+  
+  
+   
+    transition: 0.6s;
+    margin: 0 55px;
+    margin-bottom: 150px;
+  
+  }
+  
+  .profile-card:hover {
+    border-radius: 10px;
+    height: 280px;
+    padding: 30px;
+    box-shadow: 0 0 22px #3336;
+    /* background: linear-gradient(20deg, #2e71c3, #79efff); */
+    background-color: #fff;
+    border: 3px solid #3498db;
+  }
+  
+  
+  
+  .profile-card .img {
+    position: relative;
+    width: 110%;
+    height: 110%;
+    
+    transition: 0.6s;
+    z-index: 99;
+   
+  }
+  
+  .profile-card:hover .img {
+    transform: translateY(-100px);
+  }
+  
+  .img img {
+    border-radius: 50%;
+   
+   
+    transition: 0.6s;
+  }
+  
+  
+  .profile-card:hover img {
+    border-radius: 10px;
+  }
+  
+  .caption {
+    text-align: center;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 0.6s;
+  }
+  
+  .profile-card:nth-child(5):hover .caption {
+    transform: translateY(-170px);
+  }
+  .profile-card:nth-child(6):hover .caption {
+    transform: translateY(-160px);
+  }
+  .profile-card:nth-child(7):hover .caption {
+    transform: translateY(-160px);
+  }
+  
+  
+  .profile-card:nth-child(8):hover .caption {
+    transform: translateY(-170px);
+  }
+  
+  
+  .profile-card:hover .caption {
+    opacity: 1;
+  }
+  
+  .caption h3 {
+    font-size: 21px;
+    font-family: sans-serif;
+  }
+  
+  .caption p {
+    font-size: 15px;
+    color: #0c52a1;
+   font-family: 'Poppins', sans-serif;
+    margin: 2px 0 9px 0;
+  }
+  
+  
+   .font-change{
+    font-size: 18px;
+   }
+   @media (min-width: 300px) and (max-width:766px) {
+    .vision-top{
+        margin-top: 3rem;
+    }
+  }
+  
+  .profile-card:hover .hide {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  
+  .hide {
+    text-align: center;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.6s;
+  }
+  .hide h3 {
+    font-size: 16px;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 1px #0000FF; */
+    font-family: sans-serif;
+  }
+  
+  .hide p {
+    font-size: 13px;
+    color: #0c52a1;
+   font-family: 'Poppins', sans-serif;
+    margin: 2px 0 9px 0;
+  }
+  @media (max-width: 400px) {
+   .profile-card {
+    margin-bottom: 100px; }
+  }
+  @media (min-width: 1200px) {
+    .hide-social {
+      display: none;
+    }
+   }
+  
+  
