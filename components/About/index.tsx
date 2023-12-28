@@ -122,7 +122,7 @@ const About = () => {
         <img src="./images/shape/check-circle.png" alt="Tick Icon" className="w-5 h-5" />
       </div>
       <div className="text-black text-base font-normal font-['Poppins'] leading-relaxed md:whitespace-nowrap">
-        Specialized Ad Campaigns
+      Content Writing 
       </div>
     </div>
 
@@ -131,7 +131,7 @@ const About = () => {
         <img src="./images/shape/check-circle.png" alt="Tick Icon" className="w-5 h-5" />
       </div>
       <div className="text-black text-base font-normal font-['Poppins'] leading-relaxed md:whitespace-nowrap">
-        Content Writing
+        Specialized Ad Campaigns
       </div>
     </div>
 
