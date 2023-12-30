@@ -203,7 +203,33 @@ const About = () => {
     <section className="border border-x-0 border-y-stroke bg-alabaster py-11 dark:border-y-strokedark dark:bg-black">
        
           
-           
+                     
+<motion.div
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: -40,
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+         
+    className="animate_left"
+  >      
+
+<div className="flex items-center justify-center">
+      <h2 className="text-center mb-6 text-2xl font-bold text-black dark:text-white xl:text-3xl 2xl:text-4xl  ">
+  <span className="text-content  nowraps">Our Clients</span>
+</h2>
+
+
+</div>
+</motion.div>
 
 
 
