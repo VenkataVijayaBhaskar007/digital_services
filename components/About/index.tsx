@@ -2,7 +2,6 @@
 import FeatureSection from "./Cards";
 import { motion } from "framer-motion";
 import { useSpring } from 'react-spring';
-
 import "./style.css"
 
 const About = () => {
@@ -164,37 +163,7 @@ const About = () => {
   </motion.div>
 </section>
 
-<section className="container py-8 bg-white font-poppins dark:bg-btndark" style={{ marginTop: '-3rem' }}>
-      <div className="max-auto aboutsec px-4">
-        <div className="flex flex-wrap">
-          <motion.div
-            variants={{
-              hidden: {
-                opacity: 0,
-                x: -40,
-              },
-              visible: {
-                opacity: 1,
-                x: 0,
-              },
-            }}
-            initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 1, delay: 0.1 }}
-            className="animate_left w-full px-4"
-          >
-            <h2 className="text-with-circle background-circle mb-1 text2xl font-bold text-black dark:text-white 2xl:text-hero nowraps">
-              <span className="text-content">Our Services</span>
-            </h2>
-            <div className="px-3">
-              <p>
-                At Atoms Software Solutions, our comprehensive suite of services revolves around three core pillars: web development, app development, and UI/UX designing. In the realm of web development, our skilled team harnesses the latest technologies to create dynamic and scalable solutions tailored to our clients' unique needs. Whether it's building robust web applications or crafting engaging mobile apps, our app development expertise ensures seamless and user-friendly experiences across platforms...
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
+
  
     <FeatureSection/> 
 
