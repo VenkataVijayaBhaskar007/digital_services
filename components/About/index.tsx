@@ -3,6 +3,7 @@ import FeatureSection from "./Cards";
 import { motion } from "framer-motion";
 import { useSpring } from 'react-spring';
 import "./style.css"
+import CardsGallery from "./gallery";
 
 const About = () => {
   const styles = useSpring({
@@ -37,12 +38,17 @@ const About = () => {
     className="animate_top flex flex-col lg:flex-row rounded-lg bg-white px-4 lg:py-2 pb-9 shadow-solid-8 dark:bg-blacksection"
   >
     {/* Image on the Left */}
-    <div className="lg:order-1 lg:w-1/2 lg:pr-4 ">
-      <img
-        src="./images/about/about-dark-01.png" // Replace with the actual image URL
-        alt="About Image"
-        className="w-2/3 md:w-2/3  h-auto object-cover rounded-lg mx-auto mb-2 width"
-      />
+    <div className="lg:order-1 lg:w-1/2 xl:pl-40 lg:pr-30 lg:pl-0  ">
+        
+    <video
+className="object-contain rounded-3xl xl:w-full "
+height="600"
+width="778"
+src="./images/about/about.mp4"
+autoPlay
+muted
+loop
+/>
     </div>
 
     {/* Content on the Right */}
@@ -147,7 +153,7 @@ const About = () => {
 
     <div className="px-4 flex  flexshape md:flex-column">
   <a href="/support"
-    className="mt-8 mb-10 md-w-1/2 bg-white text-blue-600 hover:text-white border border-blue-600 hover:bg-blue-600 hover:-translate-y-1 shadow-md hover:shadow-lg transform hover:scale-x-105 px-6 py-2 rounded-full transition duration-300 ease-in-out mr-4"
+    className="mt-8 mb-10  md-w-1/2 bg-white text-blue-600 hover:text-white border border-blue-600 hover:bg-blue-600 hover:-translate-y-1 shadow-md hover:shadow-lg transform hover:scale-x-105 px-6 py-2 rounded-full transition duration-300 ease-in-out mr-4"
   >
     Contact Us
   </a>
@@ -164,7 +170,63 @@ const About = () => {
 </section>
 
 
- 
+<section id="Team" className="overflow-hidden   lg:pt-[10px] lg:pb-[30px]  bg-white dark:bg-dark px-10">
+        <div className="container mx-auto">
+          <div className="flex flex-wrap items-center justify-between -mx-4">
+          
+
+            <div className="w-full px-4 ">
+              <div className="mt-10 lg:mt-0 ">
+             <div style={{marginLeft:"-8px"}}>
+             <motion.div
+variants={{
+hidden: {
+opacity: 0,
+y: -40,
+},
+visible: {
+opacity: 1,
+y: 0,
+},
+}}
+initial="hidden"
+whileInView="visible"
+transition={{ duration: 1, delay: 0.1 }}
+
+className="animate_top "
+> <h2 className="text-with-circle background-circle mb-1 text2xl font-bold text-black dark:text-white xl:text-hero" style={{ whiteSpace: 'nowrap' }}>
+  <span className="text-content">Services We Provide</span>
+</h2>
+</motion.div>
+</div>
+      <div>       
+      <motion.div
+variants={{
+hidden: {
+opacity: 0,
+x: -40,
+},
+visible: {
+opacity: 1,
+x: 0,
+},
+}}
+initial="hidden"
+whileInView="visible"
+transition={{ duration: 1, delay: 0.5 }}
+
+className="animate_top "
+> 
+      <p className="">
+     Here are value added services we provide from Digital Marketing Services, which is a successful client serving company with 99.9% Client satisfaction rate. We also had experienced employes and advisors who can make your visions into actions in a fraction. 
+    </p>
+           </motion.div>        </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
     <FeatureSection/> 
 
 
@@ -398,6 +460,7 @@ const About = () => {
     <img className="object-cover object-center rounded w-[80%] md:w-[40%]  h-full" src="./images/about/6.png" alt="Menu 2" />
   </div>
 </section>
+<CardsGallery/>
 </>
 );
 };

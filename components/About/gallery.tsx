@@ -1,117 +1,62 @@
-"use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { useSpring, animated } from 'react-spring';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import "./style.css"
+import React, { useEffect, useState } from 'react';
 
-const images = [
-  "/CardsGallerysection/11.webp",
-  "/CardsGallerysection/12.webp",
-  "/CardsGallerysection/13.webp",
-  "/CardsGallerysection/14.webp",
-  "/CardsGallerysection/15.webp",
-  "/CardsGallerysection/16.webp",
+interface Card {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+}
 
+const initialCards: Card[] = [
+  // ... (unchanged)
 ];
 
+const CardsGallery: React.FC = () => {
+  const [selectedCard, setSelectedCard] = useState<number | null>(null);
 
-const CardsGallery = () => {
-  const styles = useSpring({
-    from: { transform: 'translateY(0px)' },
-    to: async (next) => {
-      while (true) {
-        await next({ transform: 'translateY(20px)' });
-        await next({ transform: 'translateY(0px)' });
-      }
-    },
-  });
-  
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-
-    autoplaySpeed: 2000,
+  const handleCardClick = (cardId: number) => {
+    setSelectedCard((prevSelectedCard) =>
+      prevSelectedCard === cardId ? null : cardId
+    );
   };
 
   return (
-    <>
-   <section id="home" className=" pb-20  md:pt-10 xl:pb-25 xl:pt-1 relative space" >
-  <div className="pad pt-7 sm:pt-16 lg:pt-20 mx-auto w-full h-full">
-    <div className=" md:block scale-95  relative">
-      <Slider {...settings} className="">
-        {images.map((image, index) => {
-          return (
-            <div key={index} className="relative">
-              <img
-                src={image}
-                alt="CardsGalleryimage"
-                key={index}
-                className=" cursor-pointer"
-              />
-           <div className="CardsGallery-text-container absolute left-0 text-left pl-6 top-1/2 transform -translate-y-1/2">
-             
-             
-          
-           <div className="mt-10 grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
-  <p className="max-w-2xl mb-2 font-light text-white textsize1  lg:mb-2  dark:text-gray-400">Welcome to</p>   
-            <h1 className="max-w-2xl mb-2 text-4xl font-semibold tracking-tight leading-none md:text-5xl xl:text-8xl text-white dark:text-white">Atoms Group</h1>
-            <p className="max-w-2xl mb-4 font-light text-white textsize lg:mb-6  dark:text-gray-400">Creating changemakers who inspire...</p>
-           
-        </div>
-              
-    </div>
-              <div className="mt-8">
-               
-               
-
-               
-              </div>
+    <div className="container">
+      <ul className="card-track">
+        {initialCards.map((card) => (
+          <li key={card.id} className={`card ${selectedCard === card.id ? 'selected' : ''}`}>
+            <img src={card.image} alt={card.title} className="card__hero" />
+            <div className="card__content-mark">
+              <div className="card__content">
+                <h1 className="card__title">{text(Math.floor(Math.random() * 9) + 1)}</h1>
+                {selectedCard === card.id && (
+                  <>
+                    <p>{card.description}</p>
+                    <h2 className="card__author">TIMOTHY JOHNSTON</h2>
+                  </>
+                )}
               </div>
             </div>
-          );
-        })}
-      </Slider>
+            <div className="card__avatar"></div>
+          </li>
+        ))}
+      </ul>
+      <div className="card-actions">
+        
+       
+      </div>
     </div>
-    <div className="block md:hidden scale-95 rounded-lg pt-6 relative">
-     
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-    </>
   );
 };
 
 export default CardsGallery;
+
+const text = (length: number) => {
+  let result = '';
+  const characters = 'abcdefghijklmnopqrstuvwxyz';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result.toUpperCase();
+};
