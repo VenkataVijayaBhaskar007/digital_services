@@ -77,7 +77,7 @@ loop
 
       {/* Content on the right */}
       <div className="text-black text-base font-normal font-['Poppins'] leading-relaxed md:whitespace-nowrap">
-        Security Measures
+       User-centric Design 
       </div>
     </div>
 
@@ -136,7 +136,7 @@ loop
         <img src="./images/shape/check-circle.png" alt="Tick Icon" className="w-5 h-5" />
       </div>
       <div className="text-black text-base font-normal font-['Poppins'] leading-relaxed md:whitespace-nowrap">
-      User-centric Design 
+      Security Measures 
       </div>
     </div>
 
