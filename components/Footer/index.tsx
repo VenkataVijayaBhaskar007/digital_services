@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -13,19 +12,19 @@ export default function Footer() {
           <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-0 md:mb-0">
 
             {/* 1st block */}
-            <div className="md:col-span-4 lg:col-span-5">
+             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2 mt-3">
                 {/* Logo */}
                 <Link href="/" className="inline-block" aria-label="Atoms Digital Solutions">
                 <img className=" max-w-full mx-auto md:max-w-none h-auto" src="./images/logo/Atoms-Digital-White.png" width={100} height={60} alt="Features 02" />
                 </Link>
               </div>
-              <div className="text-gray-400  hover:text-gray-100 transition duration-150 ease-in-out z-999">Stay connected with Atoms Software Services, a pioneering branch of the Atoms Group, as we make strides in software services. Explore innovative web applications and exceptional UI/UX designs. Committed to excellence, we actively contribute to the success of ventures. Join us on our evolving journey in the dynamic field of software services.</div>
+              <div className="text-gray-400  hover:text-gray-100 transition duration-150 ease-in-out z-999">Stay engaged with Atoms Digital Marketing Services, a pioneering division of the Atoms Group, as we advance in the realm of digital marketing. Explore innovative online campaigns and exceptional digital strategies. Committed to excellence, we actively contribute to the success of digital ventures. Join us on our evolving journey in the dynamic field of digital marketing services.</div>
             </div>
-            <div className="order-1 md:order-2 flex  justify-center sm:mt-0 mr-0 md:ml-25 z-999">
+            <div className="order-1 md:order-2 flex  justify-center sm:mt-0 mr-0 md:ml-20 z-999">
             <div className="container ">
     <div className=" flex justify-center">
-    <a href="#!" className="mr-6 text-neutral-800 dark:text-neutral-200">
+    <a href="https://www.facebook.com/profile.php?id=100091300107587" className="mr-6 text-neutral-800 dark:text-neutral-200">
     <svg
   xmlns="http://www.w3.org/2000/svg"
   className="h-4 w-4"
@@ -35,12 +34,8 @@ export default function Footer() {
     d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
 </svg>
       </a>
-      <a href="#!" className="mr-6 text-neutral-800 dark:text-neutral-200" style={{marginTop:"1px"}}>
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" className="h-4 w-4"  fill="white" viewBox="0 0 50 50">
-<path d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"></path>
-</svg>
-      </a>
-      <a href="#!" className="mr-6 text-neutral-800 dark:text-neutral-200">
+    
+      <a href="https://www.linkedin.com/company/atoms-digital-solutions/" className="mr-6 text-neutral-800 dark:text-neutral-200">
       <svg
   xmlns="http://www.w3.org/2000/svg"
   className="h-4 w-4"
@@ -51,7 +46,7 @@ export default function Footer() {
 </svg>
 
       </a>
-      <a href="#!" className="mr-6 text-neutral-800 dark:text-neutral-200">
+      <a href="https://instagram.com/digitalsolutions.atoms?igshid=NGVhN2U2NjQ0Yg==" className="mr-6 text-neutral-800 dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
                className="h-5 w-4"
@@ -61,7 +56,7 @@ export default function Footer() {
             d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
         </svg>
       </a>
-      <a href="#!" className="mr-6 text-neutral-800 dark:text-neutral-200" style={{marginTop:"-2px"}}>
+      <a href="mailto:atomsdigitalsolutions@gmail.com" className="mr-6 text-neutral-800 dark:text-neutral-200" style={{marginTop:"-2px"}}>
       <svg
   width="23"
   height="24"
@@ -156,10 +151,10 @@ export default function Footer() {
                   
                   {/* ... list items ... */}
                   <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out z-999">Engineers Scoops</Link>
+                    <Link href="https://atoms2.0.atomsgroup.net/EngineersScoops" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out z-999">Engineers Scoops</Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/" className="text-gray-300 hover:text-gray-100 transition duration-150 ease-in-out z-999">MJ Saloon & Spa</Link>
+                    <Link href="https://atoms2.0.atomsgroup.net/Mj" className="text-gray-300 hover:text-gray-100 transition duration-150 ease-in-out z-999">MJ Saloon & Spa</Link>
                   </li>
                
                 </ul>
@@ -174,12 +169,12 @@ export default function Footer() {
           {/* Bottom area */}
           <hr className="my-6 border-gray-200  dark:border-gray-700 lg:my-8" />
 
-      <div className=" flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+      <div className=" flex flex-col md:flex-row md:justify-between items-center text-sm text-white">
             <a href="https://atomsdigitalsolutions.atomsgroup.net/" className="order-2 md:order-1 mt-8 md:mt-0 z-999 hover:text-cyan-400"> &copy;   Made with ❤️ by Atoms Digital Solutions </a>
             <div className="order-1 md:order-2 flex mt-4 justify-center sm:mt-0 z-999 mr-0 md:mr-15">
-            <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="#" className="hover:underline me-4 md:me-6">About</a>
+            <a href="/#About" className="hover:underline me-4 md:me-6">About</a>
         </li>
         <li>
             <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
