@@ -61,8 +61,7 @@ loop
       </h2>
       <div className="px-3">
         <p>
-        Atoms Digital Solutions presents Atoms Visual Media, a specialized wing offering exceptional photography and videography services. Our passionate and talented team covers a wide range of events, from birthdays and weddings to corporate gatherings. We go beyond the ordinary to capture precious moments, ensuring lasting memories through our creative and remarkable work...
-        </p>
+        Atoms Digital Solutions introduces Atoms Digital Marketing, an expert division providing comprehensive digital marketing services. Our dedicated team excels in crafting strategic campaigns tailored to your business needs. From online advertising and social media management to SEO optimization, we are committed to driving results and enhancing your online presence. We leverage cutting-edge strategies to ensure your brand stands out in the digital landscape, delivering measurable success and growth for your business.  </p>
       </div>
       <div className="flex space-x-8 ml-2">
   {/* Left Section */}
