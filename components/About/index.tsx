@@ -288,19 +288,13 @@ className="animate_top "
        
        
        
-           <img src="./images/clients/6.png" alt="client-6 logo image" />
-       
        
        
            <img src="./images/clients/7.png" alt="client-7 logo image" />
        
        
        
-           <img src="./images/clients/8.png" alt="client-8 logo image" />
-       
-       
-       
-           <img src="./images/clients/9.png" alt="client-9 logo image" />
+         
        
        
        
