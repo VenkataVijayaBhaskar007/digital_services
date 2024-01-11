@@ -5,6 +5,7 @@ import { useSpring } from 'react-spring';
 import "./style.css"
 import CardsGallery from "./gallery";
 
+
 const About = () => {
   const styles = useSpring({
     from: { transform: 'translateY(0px)' },
