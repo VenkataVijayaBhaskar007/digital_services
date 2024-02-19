@@ -12,28 +12,28 @@ const featuresData: Feature[] = [
     icon: "/images/icon/2.png",
     title: "Digital Marketing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Boost your brand online with strategic digital marketing solutions for success.",
   },
   {
     id: 2,
     icon: "/images/icon/3.png",
     title: "Social Media Marketing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Elevate your brand with targeted and engaging social media strategies.",
   },
   {
     id: 3,
     icon: "/images/icon/4.png",
     title: "Social media Management",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Optimize brand presence with expert social media management for impactful engagement.",
   },
   {
     id: 4,
     icon: "/images/icon/1.png",
     title: "Logo Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Crafting unique brand identities through professional and creative logo design.",
    
   },
   {
@@ -41,14 +41,14 @@ const featuresData: Feature[] = [
     icon: "/images/icon/5.png",
     title: "Documentation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Streamline efficiency and clarity through meticulous and professional documentation services.",
   },
   {
     id: 6,
     icon: "/images/icon/6.png",
     title: "Report Making",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Create impactful reports with precision and clarity for informed decision-making.",
   },
   
 ];

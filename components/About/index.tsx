@@ -152,7 +152,7 @@ loop
 </div>
 
     <div className="px-4 flex  flexshape md:flex-column">
-  <a href="/support"
+  <a href="tel:9703394343"
     className="mt-8 mb-10  md-w-1/2 bg-white text-blue-600 hover:text-white border border-blue-600 hover:bg-blue-600 hover:-translate-y-1 shadow-md hover:shadow-lg transform hover:scale-x-105 px-6 py-2 rounded-full transition duration-300 ease-in-out mr-4"
   >
     Contact Us
